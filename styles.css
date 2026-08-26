@@ -807,6 +807,13 @@ p { line-height: 1.6; margin: 0; }
 .dd-item:hover .icon{ color:var(--copper-300, #dba876); }
 .dd-item span{ font-size:.8rem; color:var(--mist-200); line-height:1.3; transition:color .18s ease; }
 .dd-item:hover span{ color:#fff; }
+.dd-guide{
+  display:block; margin-top:16px; padding-top:14px; text-align:center;
+  border-top:1px solid rgba(255,255,255,.08);
+  font-family:var(--font-mono); font-size:.78rem; letter-spacing:.03em;
+  color:var(--copper-400); transition:color .18s ease;
+}
+.dd-guide:hover{ color:var(--copper-300, #dba876); }
 
 
 /* Услуги hub page — flat icon grid (mirrors the dropdown) */
@@ -903,6 +910,7 @@ p { line-height: 1.6; margin: 0; }
   .dd-item .icon{ flex-shrink:0; }
   .dd-item span:last-child{ overflow-wrap:break-word; word-break:break-word; }
   .nav-dropdown > a::after{ display:none; }
+  .dd-guide{ text-align:left; margin-top:10px; padding-top:10px; }
 }
 
 @media (max-width:860px){ .service-icon-grid{ grid-template-columns:repeat(2,1fr); } }
